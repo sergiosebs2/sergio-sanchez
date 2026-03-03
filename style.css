@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ── HEADER ── */
+.contenedor-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+.contenedor-header header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #2384A5;
+    text-decoration: none;
+}
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a {
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover {
+    color: #2384A5;
+}
+.nav-responsive {
+    background-color: #2384A5;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ── INICIO ── */
+.inicio {
+    background: linear-gradient(to top, rgba(63, 60, 61, 0.8), rgb(25, 34, 39)),
+        url(imagenes/manosenteclado.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner {
+    padding: 28px 24px;
+    background-color: #1e2326;
+    max-width: 360px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img {
+    border: 10px solid #2384A5;
+    display: block;
+    width: 80%;
+    margin: 20px auto 0;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1 {
+    margin-top: 24px;
+    font-size: 38px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2 {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #8899A6;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+.inicio .contenido-banner h3 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #2384A5;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+.inicio .contenido-banner .redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 24px 0 8px;
+    flex-wrap: wrap;
+}
+.inicio .contenido-banner .redes a {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    transition: .3s;
+    background: transparent;
+}
+.inicio .contenido-banner .redes a:hover {
+    background-color: #2384A5;
+    border-color: #2384A5;
+}
+.inicio .contenido-banner .btn-cv {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 28px;
+    border: 1px solid #2384A5;
+    border-radius: 6px;
+    color: #2384A5;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.inicio .contenido-banner .btn-cv:hover {
+    background: #2384A5;
+    color: #fff;
+}
+
+/* ── SOBRE MÍ ── */
+.sobremi {
+    background-color: #151A1E;
+    color: #fff;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.sobremi::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(35, 132, 165, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.section-title {
+    font-size: 13px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #2384A5;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(35,132,165,0.4), transparent);
+}
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* BIO */
+.bio-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bio-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #B8C4CC;
+}
+.highlight {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* INFO CARDS */
+.info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 8px;
+}
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: rgba(35, 132, 165, 0.06);
+    border: 1px solid rgba(35, 132, 165, 0.15);
+    border-radius: 8px;
+    transition: border-color 0.3s, background 0.3s;
+}
+.info-card:hover {
+    border-color: rgba(35, 132, 165, 0.4);
+    background: rgba(35, 132, 165, 0.1);
+}
+.info-icon {
+    font-size: 20px;
+    color: #2384A5;
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
+.info-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2384A5;
+    margin-bottom: 3px;
+}
+.info-value {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+/* SKILLS BLOCK */
+.skills-block {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.skills-group-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #2384A5;
+    margin-bottom: 16px;
+}
+.skills-group-line {
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: #2384A5;
+    flex-shrink: 0;
+}
+.skills-main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.skills-secondary-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+.skill-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 8px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    text-align: center;
+}
+.skill-badge.primary {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    padding: 18px 8px;
+}
+.skill-badge.primary:hover {
+    background: rgba(35, 132, 165, 0.1);
+    border-color: rgba(35, 132, 165, 0.3);
+    transform: translateY(-2px);
+}
+.skill-badge.secondary {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 10px 6px;
+}
+.skill-badge.secondary:hover {
+    border-color: rgba(35, 132, 165, 0.2);
+}
+.skill-badge.primary img {
+    width: 54px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.skill-badge.secondary img {
+    width: 36px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+.skill-badge span {
+    font-size: 11px;
+    color: #8899A6;
+    font-weight: 500;
+}
+.skill-badge.primary span {
+    color: #B8C4CC;
+}
+
+/* ── CURRICULUM ── */
+.curriculum {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 80px 20px;
+}
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2 {
+    font-size: 13px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #2384A5;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.curriculum h2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(35,132,165,0.4), transparent);
+}
+.curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3 {
+    font-size: 11px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #2384A5;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.curriculum .fila .col h3::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: #2384A5;
+    flex-shrink: 0;
+}
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252A2E;
+}
+.curriculum .fila .derecha {
+    border-left: 2px solid #252A2E;
+    padding-top: 44px;
+}
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    position: relative;
+    transition: border-color 0.3s;
+}
+.curriculum .fila .item:hover {
+    border-color: rgba(35, 132, 165, 0.3);
+}
+.curriculum .fila .item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.curriculum .fila .item .casa {
+    color: #2384A5;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-top: 8px;
+}
+.curriculum .fila .item .fecha {
+    display: block;
+    color: #8899A6;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.curriculum .fila .item .rubro {
+    display: block;
+    font-size: 12px;
+    color: #8899A6;
+    font-style: italic;
+    margin-bottom: 6px;
+}
+.fecha-inline {
+    font-size: 13px;
+    color: #2384A5;
+    font-weight: 400;
+    margin-left: 8px;
+}
+.curriculum .fila .izq {
+    border-right: 2px solid #2384A5;
+    margin-right: 20px;
+}
+.curriculum .fila .der {
+    border-left: 2px solid #2384A5;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori {
+    height: 2px;
+    background-color: #2384A5;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #2384A5;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord {
+    height: 2px;
+    background-color: #2384A5;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #2384A5;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/* ── PORTFOLIO ── */
+.portfolio {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 80px 20px;
+}
+.portfolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2 {
+    font-size: 13px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #2384A5;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.portfolio h2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(35,132,165,0.4), transparent);
+}
+.portfolio-grupo {
+    margin-bottom: 48px;
+}
+.portfolio-grupo h3 {
+    font-size: 11px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #2384A5;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.portfolio-grupo h3::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: #2384A5;
+    flex-shrink: 0;
+}
+.galeria {
+    display: grid;
+}
+.galeria-formativos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.galeria-formativos .proyecto {
+    height: 160px;
+    position: relative;
+}
+.galeria-java {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.portfolio .proyecto {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.portfolio .proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+.galeria-java .proyecto img {
+    height: 260px;
+}
+.portfolio .proyecto:hover img {
+    transform: scale(1.03);
+}
+.portfolio .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(14, 95, 79, 0.85), rgba(1, 15, 13, 0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.portfolio .proyecto:hover .overlay {
+    opacity: 1;
+}
+.portfolio .proyecto .overlay h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: block;
+    width: 85%;
+}
+.portfolio .proyecto .overlay h3::before {
+    display: none;
+}
+.portfolio .proyecto .overlay p {
+    font-size: 14px;
+    color: #5BC4E0;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.overlay-btns {
+    display: flex;
+    gap: 10px;
+}
+.overlay-btns a {
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #2384A5;
+    color: #fff;
+    background: transparent;
+}
+.overlay-btns a:hover {
+    background: #2384A5;
+}
+.portfolio .proyecto.destacado {
+    border-color: rgba(35, 132, 165, 0.4);
+}
+
+/* ── FOOTER ── */
+footer {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #2384A5;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* ── RESPONSIVE ── */
+@media screen and (max-width: 980px) {
+    nav { display: none; }
+.nav-responsive { display: block; }
+nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    background-color: #252A2E;
+    width: 180px;
+    z-index: 100;
+}
+nav.responsive ul { display: block !important; }
+nav.responsive ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 0;
+}
+nav.responsive ul li a {
+    display: block;
+    padding: 12px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+nav.responsive ul li a:hover {
+    color: #2384A5;
+}
+
+    /* Sobre mí */
+    .sobre-grid { grid-template-columns: 1fr; gap: 40px; }
+    .skills-main-grid { grid-template-columns: repeat(4, 1fr); }
+    .skills-secondary-grid { grid-template-columns: repeat(6, 1fr); }
+
+    /* Curriculum */
+    .curriculum .fila { flex-direction: column; }
+    .curriculum .fila .col { width: 100%; padding: 0; }
+    .curriculum .fila .izquierda { border-right: none; border-bottom: 2px solid #252A2E; padding-bottom: 32px; margin-bottom: 32px; }
+    .curriculum .fila .derecha { border-left: none; padding-top: 0; }
+    .curriculum .fila .item .conectori,
+    .curriculum .fila .item .conectord { display: none; }
+    .curriculum .fila .izq { border-right: none; margin-right: 0; border-left: 2px solid #2384A5; padding-left: 10px; }
+    .curriculum .fila .der { border-left: 2px solid #2384A5; margin-left: 0; padding-left: 10px; }
+    .curriculum .fila { margin-bottom: 0px; }
+    /* Portfolio */
+    .galeria-formativos { grid-template-columns: 1fr 1fr; }
+    .galeria-java { grid-template-columns: 1fr; }
+}
+
+@media screen and (max-width: 480px) {
+    .inicio .contenido-banner { max-width: 280px; padding: 20px 18px; }
+    .inicio .contenido-banner img { width: 60%; border-width: 6px; }
+    .inicio .contenido-banner h1 { font-size: 24px; margin-top: 16px; }
+    .inicio .contenido-banner .redes { margin: 16px 0 6px; }
+    .info-cards { grid-template-columns: 1fr; }
+    .skills-main-grid { grid-template-columns: repeat(3, 1fr); }
+    .skills-secondary-grid { grid-template-columns: repeat(4, 1fr); }
+    .section-title { font-size: 11px; letter-spacing: 3px; }
+    .galeria-formativos { grid-template-columns: 1fr; }
+}

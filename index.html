@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Sanchez - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+   <a href="#"> -> Sergio::dev()</a>
+</div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imagenes/FotoSergio.jpeg" alt="Foto de Sergio">
+            </div>
+            <h1>SERGIO SANCHEZ</h1>
+            <h2>TÉCNICO UNIVERSITARIO EN PROGRAMACIÓN · UTN</h2>
+<h3>Java Backend Developer</h3>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/sergio-sanchez-29183a22a/" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:sergiosebs14@gmail.com" target="_blank" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/sergiosebs2" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                
+            </div>
+            <a href="https://github.com/sergiosebs2/sergiosebs2/raw/main/CV%20S%C3%A1nchez%20Sergio.pdf" target="_blank" class="btn-cv">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+
+            <h2 class="section-title">Sobre Mí</h2>
+
+            <div class="sobre-grid">
+
+                <!-- BIO -->
+                <div class="bio-block">
+                    <p class="bio-text">
+                        Soy <span class="highlight">Sergio Sanchez</span>, Técnico Universitario en Programación egresado de la UTN.
+                        Me especializo en desarrollo backend con <span class="highlight">Java y Spring Boot</span>, construyendo APIs REST
+                        con JPA con Hibernate, Docker y MySQL.
+                    </p>
+                    <p class="bio-text">
+                        Mi camino hacia la programación fue una decisión consciente y determinada. Después de años de experiencia
+                        laboral en distintos rubros, elegí formarme profesionalmente en tecnología, me recibí, y no paré.
+                        Esa misma actitud es la que llevo a cada proyecto.
+                    </p>
+                    <p class="bio-text">
+                        Actualmente estoy profundizando en Spring Security y fortaleciendo mi inglés técnico.
+                        Busco oportunidades como <span class="highlight">Desarrollador Java Backend</span> para aportar valor
+                        desde el primer día y seguir creciendo en un entorno real.
+                    </p>
+
+                    <!-- INFO CARDS -->
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="info-icon">🌐</span>
+                            <div>
+                                <span class="info-label">Idiomas</span>
+                                <span class="info-value">Español nativo · Inglés B1</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">🎯</span>
+                            <div>
+                                <span class="info-label">Cargo buscado</span>
+                                <span class="info-value">Desarrollador Java Backend</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKILLS -->
+                <div class="skills-block">
+
+                    <div class="skills-group">
+                        <h3 class="skills-group-title">
+                            <span class="skills-group-line"></span>
+                            Stack Principal
+                        </h3>
+                        <div class="skills-main-grid">
+                            <div class="skill-badge primary">
+                                <img src="imagenes/Java.png" alt="Java">
+                                <span>Java 21</span>
+                            </div>
+                            <div class="skill-badge primary">
+                                <img src="imagenes/springboot.png" alt="Spring Boot">
+                                <span>Spring Boot</span>
+                            </div>
+                            <div class="skill-badge primary">
+                                <img src="imagenes/hibernate.jpg" alt="Hibernate">
+                                <span>JPA / Hibernate</span>
+                            </div>
+                            <div class="skill-badge primary">
+                                <img src="imagenes/docker.png" alt="Docker">
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-badge primary">
+                                <img src="imagenes/MySQL.png" alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-badge primary">
+                                <img src="imagenes/maven.png" alt="Maven">
+                                <span>Maven</span>
+                            </div>
+                            <div class="skill-badge primary">
+                                <img src="imagenes/postman.png" alt="Postman">
+                                <span>Postman</span>
+                            </div>
+                            <div class="skill-badge primary">
+                                <img src="imagenes/swagger.png" alt="Swagger">
+                                <span>Swagger</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-group">
+                        <h3 class="skills-group-title">
+                            <span class="skills-group-line"></span>
+                            Conocimientos adicionales
+                        </h3>
+                        <div class="skills-secondary-grid">
+                            <div class="skill-badge secondary">
+                                <img src="imagenes/cSharp.png" alt="C#">
+                                <span>C#</span>
+                            </div>
+                            <div class="skill-badge secondary">
+                                <img src="imagenes/NET-Framework.png" alt=".Net">
+                                <span>.NET</span>
+                            </div>
+                            <div class="skill-badge secondary">
+                                <img src="imagenes/SQLserver.png" alt="SQL Server">
+                                <span>SQL Server</span>
+                            </div>
+                            <div class="skill-badge secondary">
+                                <img src="imagenes/c++.png" alt="C++">
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-badge secondary">
+                                <img src="imagenes/HTML.png" alt="HTML">
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-badge secondary">
+                                <img src="imagenes/CSS.png" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+
+        <!-- EDUCACIÓN -->
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+
+                <div class="item izq">
+                    <h4>Inglés MCER B1</h4>
+                    <span class="casa">Nivel 4 completado en Celc Idiomas</span>
+                    <span class="fecha">2023 - 2025</span>
+                    <div class="conectori"><div class="circuloi"></div></div>
+                </div>
+
+                <div class="item izq">
+                    <h4>Universidad Técnica Nacional</h4>
+                    <span class="casa">Tecnicatura Universitaria en Programación</span>
+                    <span class="fecha">2023 - 2025</span>
+                    <div class="conectori"><div class="circuloi"></div></div>
+                </div>
+
+                
+            </div>
+
+            <div class="col derecha">
+                
+                <div class="item der">
+                    <h4>Cursos</h4>
+                    <span class="casa">Programa Oracle Next Education en Alura Latam</span>
+                    <span class="fecha">2022</span>
+                    <span class="casa">Java Tutorizado en Píldoras Informáticas</span>
+                    <span class="fecha">2025</span>
+                    <span class="casa">Spring Boot en TodoCode Academy</span>
+                    <span class="fecha">2025</span>
+                    <div class="conectord"><div class="circulod"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPERIENCIA -->
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Experiencia de trabajo</h3>
+
+                <div class="item izq">
+                    <h4>Operario Industrial <span class="fecha-inline">2021 - 2025</span></h4>
+                    <span class="casa">Pepsico Argentina</span>
+                    <span class="rubro">Industria alimenticia</span>
+                    <span class="casa">Eskabe S.A.</span>
+                    <span class="rubro">Industria metalúrgica</span>
+                    <span class="casa">Viomar SAIC</span>
+                    <span class="rubro">Industria del plástico</span>
+                    <div class="conectori"><div class="circuloi"></div></div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+
+                <div class="item der">
+                    <h4>Cocinero / Ayudante de cocina <span class="fecha-inline">2017 - 2021</span></h4>
+                    <span class="casa">La Fonte D'oro</span>
+                    <span class="rubro">Restaurant, cadena de confiterías y cafeterías</span>
+                    <span class="casa">Cava Federal</span>
+                    <span class="rubro">Restaurant, bar de vinos</span>
+                    <div class="conectord"><div class="circulod"></div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>Portfolio</h2>
+
+        <!-- PROYECTOS FORMATIVOS -->
+        <div class="portfolio-grupo">
+            <h3>Proyectos formativos</h3>
+            <div class="galeria galeria-formativos">
+
+                <div class="proyecto">
+                    <img src="imgProyectos/gestiónC++.png" alt="Proyecto 1">
+                    <div class="overlay">
+                        <h3>Sistema de gestión · App de escritorio</h3>
+                         <p>C++ · POO · Archivos</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/2-Sistema-de-gestion-Cpp" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="imgProyectos/ListadoProductos.png" alt="Proyecto 2">
+                    <div class="overlay">
+                        <h3>Gestión de productos · App de escritorio</h3>
+        <p>C# · WinForms · SQL Server</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/3-Gestion-de-Articulos" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="imgProyectos/pagBarberia.png" alt="Proyecto 3">
+                    <div class="overlay">
+                        <h3>Sitio de barbería · Maquetación web</h3>
+        <p>HTML · CSS · JavaScript</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/1-PaginaAlura" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="imgProyectos/proyecto4.png" alt="Proyecto 4">
+                    <div class="overlay">
+                        <h3>E-commerce · App web</h3>
+        <p>C# · .NET · SQL · Carrito</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/4-Carrito-de-compras-con-Net" target="_blank">GitHub</a>                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="imgProyectos/proyecto5.png" alt="Proyecto 5">
+                    <div class="overlay">
+                        <h3>Gestión de panadería · App web</h3>
+        <p>C# · .NET · SQL · Roles</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/5-App-Gestion-Comercio" target="_blank">GitHub</a>
+                            <a href="https://www.youtube.com/watch?v=uqACWN9e9N0" target="_blank">▶ Video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="imgProyectos/proyecto6.png" alt="Proyecto 6">
+                    <div class="overlay">
+                        <h3>Juego ahorcado · App web</h3>
+        <p>C# · .NET · SQL · Multirrol</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/6-App-juegoAhorcado-Net-SQL" target="_blank">GitHub</a>
+                            <a href="https://youtu.be/uvcDxFWk3IA" target="_blank">▶ Video</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PROYECTOS JAVA -->
+        <div class="portfolio-grupo">
+            <h3>Proyectos Java</h3>
+            <div class="galeria galeria-java">
+
+                <div class="proyecto">
+                    <img src="imgProyectos/proyecto7.png" alt="Proyecto 7">
+                    <div class="overlay">
+                         <h3>Gestión de personas · App de escritorio</h3>
+        <p>Java · Swing · MySQL · Capas</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/7-App-Gestion-Escritorio-javaSwing" target="_blank">GitHub</a>
+                            <a href="https://www.youtube.com/watch?v=Y1HXtVh_CTs" target="_blank">▶ Video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="imgProyectos/proyecto8.png" alt="Proyecto 8">
+                    <div class="overlay">
+                         <h3>Juegos para niños · App de escritorio</h3>
+        <p>Java · JavaFX · Hilos · Ficheros</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/8-App-Escritorio-Juegos-JavaFX" target="_blank">GitHub</a>
+                            <a href="https://youtu.be/1H0Bb_zeQXU" target="_blank">▶ Video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto destacado">
+                    <img src="imgProyectos/proyecto9.png" alt="Proyecto 9">
+                    <div class="overlay">
+                        <h3>Gestión bancaria · App web</h3>
+        <p>JSP · Servlet · MySQL · Capas</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/9-App-Web-JavaJSP-GestionBancaria" target="_blank">GitHub</a>
+                            <a href="https://www.youtube.com/watch?v=UMXl3B8HByE" target="_blank">▶ Video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto destacado">
+                    <img src="imgProyectos/proyecto10.png" alt="Proyecto 10">
+                    <div class="overlay">
+                        <h3>API REST · Backend</h3>
+        <p>Spring Boot · H2 · Swagger · Postman</p>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sergiosebs2/10-APP-Web-Backend-SpringBoot" target="_blank">GitHub</a>                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up">  </i> 
+    </a>
+        <p>© 2026 · Sanchez Sergio Sebastian</p>
+    </footer>
+
+</body>
+</html>
